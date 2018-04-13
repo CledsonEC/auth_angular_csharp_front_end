@@ -12,7 +12,7 @@ export class LoginComponent implements OnInit {
 
   login : string = "";
   senha : string = "";
-
+  loadind : boolean = false;
   constructor(private _api : ApiService) { }
 
   ngOnInit() {
@@ -23,7 +23,7 @@ export class LoginComponent implements OnInit {
     console.log("login " + this.login);
     console.log("senha " + this.senha);
     
-    
+    this.loadind = true;
   }
 
 }
